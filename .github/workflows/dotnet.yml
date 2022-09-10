@@ -21,7 +21,7 @@ jobs:
     
     # published to release-folder
     - name: Commit wwwroot to GitHub Pages
-      uses: victorhrvs/github-pages-deploy-action@3.7.1
+      uses: victorhrvs/WebApp
       with:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
