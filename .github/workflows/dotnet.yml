@@ -1,9 +1,9 @@
 name: Deploy to GitHub Pages
 
 # Run workflow on every push to the master branch
-on:
-  push:
-    branches: [ master ]
+on: [push]
+permissions:
+  contents: write
 
 jobs:
   deploy-to-github-pages:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     # uses GitHub's checkout action to checkout code form the master branch
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     # sets up .NET Core SDK 3.1
     - name: Setup .NET Core SDK
@@ -23,8 +23,7 @@ jobs:
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4.4.0
       with:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: release/wwwroot
+        branch: gh-pages
+        folder: release/wwwroot
     
     
