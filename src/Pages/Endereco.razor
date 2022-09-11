@@ -1,0 +1,65 @@
+﻿@page "/endereco"
+
+<PageTitle>Endereço</PageTitle>
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Endereço</h1>
+    <p>Preencha com os seus dados</p>
+    <div class="d-flex flex-column">
+        <div class="p-2">
+            <form action="list" onsubmit="" class="card p-3">
+                <div class="p-2 input-group">
+                    <select required class="form-control" id="UF" name="UF">
+                        <option value="">Selecione o seu Estado</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">CEP</label>
+                    <input class="form-control" autocomplete="postal-code" />
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Cidade</label>
+                    <input class="form-control" autocomplete="locality" />
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Endereço</label>
+                    <input class="form-control" autocomplete="address-line1" />
+                </div>
+                <div class="p-3">
+                    <button class="btn btn-dark" onclick="">Próxima Página</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+

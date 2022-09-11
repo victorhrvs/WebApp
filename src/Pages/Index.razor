@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<PageTitle>Formulário Inicial</PageTitle>
+
+<div class="text-center">
+    <h1 class="display-4">Formulário Inicial</h1>
+    <p>Preencha com os seus dados</p>
+    <div class="d-flex flex-column">
+        <div class="p-2">
+            <form action="endereco" onsubmit="" class="card p-3">
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Nome</label>
+                    <input required class="form-control" type="text" autocomplete="given-name" id="fname" />
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Sobrenome</label>
+                    <input class="form-control" autocomplete="family-name" />
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Email</label>
+                    <input required class="form-control" autocomplete="email" />
+                </div>
+                <div class="p-2 input-group">
+                    <label class="input-group-text">Telefone</label>
+                    <input class="form-control" autocomplete="tel"/>
+                </div>
+                <div class="p-3">
+                    <button class="btn btn-dark" onclick="">Próxima Página</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
